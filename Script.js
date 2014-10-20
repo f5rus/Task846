@@ -129,17 +129,15 @@ function validate(form){
     };
    
     
-    var y = $('#year').text();
+    var y = parseInt($('#year').text())+18;
     var m = $("#dropdownMenu2").val();
     var d = $("#day").text();
     
     var dateb =  new Date(y, m, d); 
-    var age = (date - dateb)/1000/ 60 /60 /24 /360;
-        
-    
+       
     var dropYear = $('#dropdownMenu3');
     var group = dropYear.parents('.control-group');
-    if(age<18){
+    if(dateb > date) {
         valid = false;
         displayError(dropYear, group, "ограничение по возрасту 18+!");
     }
