@@ -1,0 +1,60 @@
+.main{    
+    margin-top: 20px; 
+}
+.menu_date{
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.li_date{
+    display: block;
+    padding: 2px 20px;
+}
+
+.li_date:hover{
+    background-color: #007cbb;
+    cursor:pointer;
+    color: white;
+}
+
+#dropdownMenu2{
+    width: 110px;
+}
+
+#dropdownMenu1{
+    width: 55px;
+}
+
+#dropdownMenu3{
+    width: 70px;
+}
+
+.linia{
+    float: left;
+}
+
+.spas2_date_ch{
+   margin: 0px;
+   
+   width: 55px;
+}
+
+.spas2_date_mon{
+    
+   left: -15px; 
+   margin: 0px;
+   
+   width: 110px;
+}
+
+.spas2_date_year{
+    
+   left: -30px; 
+   margin: 0px;
+  
+   width: 70px;
+}
+
+#reg_form{
+    float: left;
+}
