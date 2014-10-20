@@ -13,18 +13,6 @@ and open the template in the editor.
     </head>
     <body>
         
-        
-        
-    <!--ФИО - заполнено и должно содержать только русские буквы
-    пол (radio button) - заполнено
-    город (select) - заполнено
-    имя пользоваля - заполнено и должно содержать только буквы (латиницу) и цифры
-    пароль, повторение пароля - заполнены, содержат не меньше 8 символов, содержат только допустимые символы и совпадают
-    о себе (textarea) - заполнено
-    дату рождения (3 dropdown) - заполнены и возраст больше 18
-    -->
-        
-        
         <div class="container main">  
             <div id="reg_form">
             <form class="form-horizontal">
@@ -99,7 +87,7 @@ and open the template in the editor.
                     </div>
 		</div>
 
-                
+                <input id = "datarog" name = "datarog"></input>
                 
                  <div class="control-group">
 			<label class="control-label">Пол</label>
