@@ -30,6 +30,10 @@ function fillyears()
     }   
    
 }
+
+function fillinputdate(){   
+    $('#datarog').val($("#day").text()+" "+ $("#mes").text()+" "+$("#year").text());
+}
 function showtooltip(elem,mess){
       elem.tooltip({
                 placement:'right',
@@ -154,6 +158,7 @@ $(document).ready(function(){
     
     fillyears();
    
+    fillinputdate();
     
     $(".liyear").on('click', function(){
         $("#year").text($(this).text());
@@ -171,6 +176,8 @@ $(document).ready(function(){
     });
     
     $("form").on('submit', function(e){
+        
+        fillinputdate();
         
         e.preventDefault();
         
@@ -207,6 +214,7 @@ $(document).ready(function(){
         $(this).parents('.control-group').removeClass('success').removeClass('error');
         $('#dropdownMenu3').tooltip('destroy');
     });
+    
 }       
 );
 
