@@ -58,3 +58,9 @@
 #reg_form{
     float: left;
 }
+
+
+#datarog {
+    visibility:hidden;
+    position: absolute; 
+}
